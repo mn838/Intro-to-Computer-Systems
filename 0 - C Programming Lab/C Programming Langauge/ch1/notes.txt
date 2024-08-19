@@ -1,0 +1,115 @@
+Chapter 1: A Tutorial Introduction
+
+1.1 - Getting Started
+    - write first hello world program
+    - shown in hello.c file
+
+    - to run ".c" files
+        - command: cc < filename >
+        - creates an executable filed names a.out
+        - type ./a.out command to print "Hello, world"
+    
+    - functions
+        - contains statements that specify the computing operations to be done
+        - function named main
+            - program begins executing at the beginning of main
+            - every program must have main program somewhere
+            - call other functions to help perform its job
+        - parentheses after functions is to provide a list of values, called arguments
+        - function is called by naming it
+    
+    - variables
+        - store values used during computations
+
+    - #include <stdio.h>
+        - tells the compiler to include information about the standard input/output library
+    
+    - character string/string constant: sequence of characters in double quotes
+        - \n is newline character
+
+1.2 - Variables and Arithmetic Expressions
+    - refer to fahr.c
+
+    - /**/
+        - comments which briefly explains what the program does
+        - ignored by compiler
+    
+    - variables must be declared before they are used, usually at the beginning of the function before any executable statements
+        - declaration announces the properties of variables
+    
+    - numeric types
+        - char   - single byte
+        - short  - short integer
+        - long   - long integer
+        - int    - integer
+        - float  - floating point
+        - double - double-precision floating point
+    
+    - while loops
+        - condition in parentheses is tested
+        - if true
+            - body of loop is executed
+            - checks condition again
+        - if false
+            - loop ends, and execution continues at the statement that follows the loop
+    
+    - division of integers
+        - truncates: any fractional part is discarded
+    
+    - output formatting with printf
+        - %d - specifies an integer arguments
+        - \t - prints a tab between 
+
+        - %{x}d - replace x with number, right justifies values to minimum width
+
+    exercise 1.4 - cel.c
+
+1.3 - The For statement
+    - refer to fahr_for.c
+
+    - elimination of most variables; only fahr remains
+    - lower and upper limit and step size appear only as constants in the for statement
+
+    - fahr = 0
+        - initializes fahr
+    
+    - fahr <= 300
+        - test/condition that controls the loop
+    
+    - fahr = fahr + 20
+        - increment step
+    
+    - Exercise 1.5 - fahr_for_rev.c
+
+1.4 - Symbolic Constants
+    - #define line defines a symbolic name or symbolic constant to be a particular string of characters
+    - refer to sym_constants.c
+
+1.5 - Character Input and Output
+    - text stream - sequence of characters divided into lines; each line consists of zero or more characters followed by a newline character
+    
+    - getchar()
+        - reads the next input character from a text stream and returns that as its value
+    
+    - putchar()
+        - prints a character
+    
+    - 1.5.1 - File Copying
+        - refer to simple_io.c version 1
+
+        - type char is specifically used for storing such character data
+        - getchar returns a distinctive value, EOF, when there is no more input, a value that cannot be confused with any real character
+
+        - refer to simple_io.c version 2
+
+    1.5.2 - Character Counting
+        - refer to count_chars.c
+
+        - ++ operator is to increment by one
+        - -- operator is to decrement by one
+        - can be either postfix or prefix operators
+
+    1.5.3 - Line Counting
+        - Exercise 1.8 - 
+        - Exercise 1.9 - 
+        - Exercise 1.10 - 
